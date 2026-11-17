@@ -1,0 +1,13 @@
+name: astrbot_plugin_fx
+display_name: Token fx模拟交易
+short_desc: 用 token 买外汇，支持杠杆、查仓、查报价与爆仓强平
+desc: >
+  基于 Token 钱包插件的模拟外汇交易插件。自动拉取 EURUSD、GBPUSD、USDJPY、
+  XAUUSD 真实报价（启动即拉取、每分钟自动拉取，买入/卖出/查报价时各拉取一次），
+  支持 /买入、/查仓、/查报价、/卖出 四条指令，按 10000 token = 1 美元计价，
+  所有使用与获得的 token 向上取整、百分比保留两位小数；每次拉取报价后检查爆仓，
+  同一群聊的爆仓信息合并成一条消息推送并强制平仓，不足部分从钱包账户扣减。
+version: 1.0.0
+author: 孤清辰
+support_platforms:
+  - aiocqhttp

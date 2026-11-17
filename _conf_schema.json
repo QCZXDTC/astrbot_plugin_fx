@@ -1,0 +1,8 @@
+{
+  "wallet_path": {
+    "description": "钱包文件(wallet.json)存储路径，与 astrbot_plugin_token_wallet 互通",
+    "type": "string",
+    "default": "",
+    "hint": "留空则默认存放在插件自身 data 目录下（wallet.json）。可填绝对路径，或相对插件 data 目录的相对路径。"
+  }
+}
